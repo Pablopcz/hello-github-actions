@@ -10,4 +10,8 @@ jobs:
     name: Post welcome comment
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello World"
+      - name: Post welcome comment
+        uses: Actions-R-Us/actions-welcome@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          welcome-message: 'Welcome to the repository!'
