@@ -14,3 +14,4 @@ jobs:
         uses: Actions-R-Us/actions-welcome@v1
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          welcome-message: "Welcome to the repository!"
